@@ -29,9 +29,9 @@ ________________________________________________________________________________
 ## 1- Criar a organização das pastas (Client, Server)
 então fica: 
 ## workspace / client
-`npx create-react-app` crud
+`npx create-react-app crud`
 Depois de criado , dar um 
-yarn start ou npm start
+`yarn start ou npm start`
 
 ## 2- Dar uma limpada no projeto
 Deletar os 4 arquivos que vem como padrão
@@ -56,8 +56,8 @@ retirar os links quebrados em index.js e app.js da logo e do reportWevvitals
 
 ## workspace / server
 
-npm init
-yarn add mysql express cors nodemon
+`npm init`
+`yarn add mysql express cors nodemon`
 criar um arquivo
  index.js
 declarar o express etc
