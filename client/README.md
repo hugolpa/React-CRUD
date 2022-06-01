@@ -29,7 +29,7 @@ ________________________________________________________________________________
 ## 1- Criar a organização das pastas (Client, Server)
 então fica: 
 ## workspace / client
-npx create-react-app crud
+`npx create-react-app` crud
 Depois de criado , dar um 
 yarn start ou npm start
 
