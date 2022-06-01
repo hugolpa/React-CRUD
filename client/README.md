@@ -22,10 +22,11 @@ Tipo de dados e nome do banco descrito a baixo na imagem.
 
 ![crudgames](https://user-images.githubusercontent.com/37938486/171411767-959a3dc7-9e40-4164-b90e-c2aa3fdefb84.png)
 
+# Não se esqueça de mudar as configurações de conecção com o banco no server/index.js
 `const db = mysql.createPool({
   host: "localhost",
   user: "root",
-  password: "Bento161730",
+  password: "password",
   database: "crudgames",
 });`
 
