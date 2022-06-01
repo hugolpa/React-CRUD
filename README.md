@@ -12,59 +12,71 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You will also see any lint 
+ors in the console.
 
-### `yarn test`
+# Para conectar o banco 
+Instale o workbench 
+Crie o banco de dados com suas respectivas colunas
+Tipo de dados e nome do banco descrito a baixo na imagem.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![crudgames](https://user-images.githubusercontent.com/37938486/171411767-959a3dc7-9e40-4164-b90e-c2aa3fdefb84.png)
 
-### `yarn build`
+# Não se esqueça de mudar as configurações de conecção com o banco no server/index.js
+`const db = mysql.createPool({
+  host: "localhost",
+  user: "root",
+  password: "password",
+  database: "crudgames",
+});`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+______________________________________________________________________________________________________________________________
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Como foi feito ?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 1- Criar a organização das pastas (Client, Server)
+então fica: 
+## workspace / client
+`npx create-react-app crud`
+Depois de criado , dar um 
+`yarn start ou npm start`
 
-### `yarn eject`
+## 2- Dar uma limpada no projeto
+Deletar os 4 arquivos que vem como padrão
+app.test.js
+logo.svg
+reportWebVitals.js
+setupTests.js
+O index.css a única coisa que deixaremos é o 
+`*{
+padding: 0;
+margin: 0;
+}`
+isso ficará global.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+app.css limpar o arquivo deixar vazio
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+no index.js 
+retirar o reportWevVitals
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+no app.js retirar a logo e a div
+retirar os links quebrados em index.js e app.js da logo e do reportWevvitals
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## workspace / server
 
-## Learn More
+`npm init`
+`yarn add mysql express cors nodemon`
+criar um arquivo
+ index.js
+declarar o express etc
+`const express =require("express");
+const app = express();`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
