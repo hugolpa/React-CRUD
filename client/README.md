@@ -40,10 +40,10 @@ logo.svg
 reportWebVitals.js
 setupTests.js
 O index.css a única coisa que deixaremos é o 
-*{
+`*{
 padding: 0;
 margin: 0;
-}
+}`
 isso ficará global.
 
 app.css limpar o arquivo deixar vazio
