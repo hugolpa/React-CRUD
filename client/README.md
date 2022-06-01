@@ -62,4 +62,6 @@ ors in the console.
 Instale o workbench 
 crie o banco de dados com suas respectivas colunas
 
-![Uploading crudgames.png…]()
+![crudgames](https://user-images.githubusercontent.com/37938486/171411767-959a3dc7-9e40-4164-b90e-c2aa3fdefb84.png)
+
+
