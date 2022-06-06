@@ -28,21 +28,17 @@ Tipo de dados e nome do banco descrito a baixo na imagem.
 ![crudgames](https://user-images.githubusercontent.com/37938486/171411767-959a3dc7-9e40-4164-b90e-c2aa3fdefb84.png)
 
 # Não se esqueça de mudar as configurações de conecção com o banco no server/index.js
-`const db = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  password: "password",
-  database: "crudgames",
-});`
+![image](https://user-images.githubusercontent.com/37938486/172199427-0be72446-4eed-4d32-b128-5d726b81c49d.png)
 
-colunas
-id PK AI
-name
-cost
-category
-resumo varchar (200)
+<br />
+colunas <br />
+id PK AI<br />
+name<br />
+cost<br />
+category<br />
+resumo varchar (200)<br />
 
-#Caso no console do VS der esse erro destacado na imagem em verde do lado server :
+# Caso no console do VS der esse erro destacado na imagem em verde do lado server :
 ![image](https://user-images.githubusercontent.com/37938486/172198561-d1394fec-635d-4cd3-b2bd-b7e76b6dc472.png)
 execute no workbench esse comando: 
 `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';`
