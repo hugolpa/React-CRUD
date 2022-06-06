@@ -45,7 +45,7 @@ resumo varchar (200)
 #Caso no console do VS der esse erro destacado na imagem em verde do lado server :
 ![image](https://user-images.githubusercontent.com/37938486/172198561-d1394fec-635d-4cd3-b2bd-b7e76b6dc472.png)
 execute no workbench esse comando: 
-'ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';'
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';`
 trocando o password
  
 ______________________________________________________________________________________________________________________________
