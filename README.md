@@ -28,7 +28,7 @@ Tipo de dados e nome do banco descrito a baixo na imagem.
 ![crudgames](https://user-images.githubusercontent.com/37938486/171411767-959a3dc7-9e40-4164-b90e-c2aa3fdefb84.png)
 
 # Não se esqueça de mudar as configurações de conecção com o banco no server/index.js
-![image](https://user-images.githubusercontent.com/37938486/172199427-0be72446-4eed-4d32-b128-5d726b81c49d.png)
+![image](https://user-images.githubusercontent.com/37938486/172199715-a791b5e8-160a-4cfc-a21c-3d511325a216.png)
 
 <br />
 colunas <br />
