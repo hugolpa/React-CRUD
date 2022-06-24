@@ -34,3 +34,9 @@
 .register-button {
   padding: 2px 5px;
 }
+/* alinhamento dos inputs*/
+.alinhamento {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

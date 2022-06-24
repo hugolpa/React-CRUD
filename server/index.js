@@ -12,6 +12,7 @@ const db = mysql.createPool({
 
 
 
+
 app.use(express.json());
 app.use(cors());
 
@@ -21,7 +22,7 @@ app.post("/register", (req, res) => {
   const { category } = req.body;
   const { resumo } = req.body;
 
-  let mysql = "INSERT INTO games ( name, cost, category, resumo) VALUES (?, ?, ?, ?)";
+  let mysql = "INSERT INTO games (name, cost, category, resumo) VALUES (?, ?, ?, ?)";
   db.query(mysql, [name, cost, category, resumo], (err, result) => {
     res.send(result);
   });
