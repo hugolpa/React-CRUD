@@ -4,7 +4,7 @@ import Axios from "axios";
 import Card from "./components/cards/cards";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Input } from 'reactstrap';
-// trabalhando com o git
+// trabalhando com o git 2
 export default function App() {
 
 
