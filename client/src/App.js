@@ -13,13 +13,13 @@ export default function App() {
   const [listCard, setListCard] = useState([]);
   console.log(listCard);
   const handleRegisterGame = () => {
-    Axios.post("http://localhost:3001/register", {
+    Axios.post("https://crudhugo.herokuapp.com/register", {
       name: values.name,
       cost: values.cost,
       category: values.category,
       resumo: values.resumo,
     }).then(() => {
-      Axios.post("http://localhost:3001/search", {
+      Axios.post("https://crudhugo.herokuapp.com/search", {
         name: values.name,
         cost: values.cost,
         category: values.category,
@@ -39,7 +39,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/getCards").then((response) => {
+    Axios.get("https://crudhugo.herokuapp.com/getCards").then((response) => {
       setListCard(response.data);
     });
   }, []);
